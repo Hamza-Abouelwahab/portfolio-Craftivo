@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg{
+
+    background-size:cover ;width: 100%;  height: 100vh;opacity: 3;
+}
+header{
+    div{
+        nav{
+            a{
+                color: $sma; text-decoration: none;
+                &:hover{
+                    color:$rca;
+                }
+            }
+        }
+    }
+}
+.hero{
+    color: $sma;
+    padding-top: 15vw;
+    nav{
+        a{
+            color:$sma;  
+            border-radius: 50%;
+            background-color: rgba(128, 128, 128, 0.631);
+            padding-inline: 0.5vw;
+            padding-bottom: 0.5vh;
+            &:hover{
+                background-color: $rca;
+            }
+        }
+        
+    }
+}
+main{
+    background-color: $bg;
+    color: $sma;
+    .about{
+        margin-inline: 25vw;
+            h6{
+                color: $rca;
+                position: relative;
+                &::before{
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        width: 50%;
+                        padding: 2px;
+                        background: $rca;
+                        margin-inline: 1.5vw;
+                }
+            }
+            p{
+                font-size: 12px;
+            }
+    }
+    .info{
+        margin-inline: 15vw;
+        .left{
+            background-color: $box;
+            width: 30vw;
+            .top-side{
+                
+                img{
+                    border: solid 5px $rca;
+                }
+                h4{
+                    font-size: 25px;
+                }
+                p{
+                    color: $rca;
+                
+                }
+            }
+            .exper{
+                border-top: 1px solid $line ;
+                border-bottom: 1px solid $line ;
+                .project{
+                    p{
+                        color: $line;
+                    }
+                }
+            }
+            .button{
+                border-bottom: 1px solid $line;
+                .btn-1{
+                    background-color:$rca;
+                    color: $sma;
+                }
+                .btn-2{
+                    background-color: $ue;
+                    color: $rca;
+                }
+            }
+            nav{
+                a{
+                    // font-size: 25px;
+                    background-color: $line;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 8px;
+                    color: $sma;
+                    &:hover{
+                        background-color: $rca;
+                    }
+                    
+                }
+            }
+        }
+        .right{
+            width: 70vw;
+        }
+    }
+
+}
