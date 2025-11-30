@@ -4,7 +4,7 @@
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11924,6 +11924,7 @@ main .info {
 main .info .left {
   background-color: #1c1c1c;
   width: 30vw;
+  height: fit-content;
 }
 main .info .left .top-side img {
   border: solid 5px #0da726;
@@ -11967,6 +11968,52 @@ main .info .left nav a:hover {
 }
 main .info .right {
   width: 70vw;
+}
+main .info .right .type {
+  padding-top: 0.5vh;
+}
+main .info .right .type span {
+  background-color: rgba(13, 167, 39, 0.1921568627);
+  color: #0da726;
+}
+main .info .right .type p {
+  font-size: 18px;
+  font-weight: 100;
+}
+main .info .right .box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1vw;
+}
+main .info .right .box .cart {
+  background-color: #1c1c1c;
+}
+main .info .right .box .cart i {
+  color: #0da726;
+}
+main .info .right .box .cart > div > p {
+  color: rgba(255, 255, 255, 0.2078431373);
+}
+main .info .right .skills p {
+  background-color: rgba(13, 167, 39, 0.1921568627);
+  color: #0da726;
+}
+main .info .right .box-progress div p {
+  font-size: 12px;
+}
+main .info .right .box-progress div span {
+  color: #0da726;
+  font-size: 16px;
+}
+main .info .right .box-progress .progress {
+  height: 6px;
+  width: 100%;
+  background-color: #1c1c1c;
+}
+main .info .right .box-progress .progress .progress-bar {
+  background-color: #0da726;
+  width: 95%;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=app.css.map */
